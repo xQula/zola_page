@@ -1,0 +1,71 @@
+name = "Project Portfolio"
+description = "Theme for a project portfolio (based on Tailwind CSS)."
+license = "MIT"
+homepage = "https://github.com/awinterstein/zola-theme-project-portfolio"
+min_version = "0.9.0" # The minimum version of Zola required
+demo = "https://awinterstein.github.io/zola-theme-project-portfolio-example/" # Live demo URL
+
+[author]
+name = "Adrian Winterstein"
+homepage = "https://www.winterstein.biz"
+
+# Any variable there can be overridden in the end user `config.toml`
+# You don't need to prefix variables by the theme name but as this will
+# be merged with user data, some kind of prefix or nesting is preferable
+# Use snake_casing to be consistent with the rest of Zola
+[extra]
+enable_search = false
+enable_multilingual = false
+
+#main_skills_threshold = 5 # Set this variable to show all skills with at least n projects as main skills
+
+[extra.navbar]
+#title = ""
+
+#items = [
+#    { lang = "en", links = [
+#        { url = "resume", name = "CV" },
+#    ] },
+#    { lang = "de", links = [
+#        { url = "resume", name = "Lebenslauf" },
+#    ] }
+#]
+
+[extra.sidebar]
+#items = [
+#    { lang = "en", links = [
+#        { url = "markdown", name = "Markdown" },
+#        { url = "blog", name = "Blog" }
+#    ] },
+#    { lang = "fr", links = [
+#        { url = "fr/markdown", name = "Markdown" },
+#        { url = "fr/blog", name = "Blog" }
+#    ] }
+#]
+
+# Index page
+[extra.index]
+#title = "Main title"
+#image = "https://via.placeholder.com/200"
+#image_alt = "Placeholder text describing the index's image."
+
+[extra.social]
+codeberg = ""
+github = ""
+gitlab = ""
+twitter = ""
+mastodon = ""
+linkedin = ""
+stackoverflow = ""
+telegram = ""
+email = ""
+phone = ""
+
+[extra.favicon]
+#favicon = "/icons/favicon.ico"
+#favicon_16x16 = "/icons/favicon-16x16.png"
+#favicon_32x32 = "/icons/favicon-32x32.png"
+#apple_touch_icon = "/icons/apple-touch-icon.png"
+#android_chrome_512 = "/icons/android-chrome-512x512.png"
+#android_chrome_192 = "/icons/android-chrome-192x192.png"
+#manifest = "/icons/site.webmanifest"
