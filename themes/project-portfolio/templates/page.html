@@ -42,13 +42,13 @@
     <!-- Content -->
     <div id="page-content" class="text-bold mt-2">
       {% if page.extra.image %}
-      <div style="position: relative; padding-top: 56.25%; max-width: 100%; height: 0; overflow: hidden; width: 100%; margin: 0 auto;">
-        <iframe class="rounded-lg lg:float-right lg:ml-4 my-1"
-                src="{{page.extra.image}}"
+      <div style="position: relative; width: 100%; max-width: 800px; margin: 0 auto;">
+        <iframe class="rounded-lg"
+                src="{{ page.extra.image }}"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                style="width: 100%; height: 450px;">
         </iframe>
       </div>
       {% endif %}
