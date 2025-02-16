@@ -5,7 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>{% block title %}{{ config.title }} | {{ page.title | default(value=config.extra.index.slogan) }}{% endblock title %}</title>
+  <title>
+    {% block title %}
+    {{ config.title }} | {{ trans(key="slogan", lang=lang) }}
+    {% endblock title %}
+  </title>
 
   <!-- STYLESHEETS -->
   <link href="{{ config.base_url | trim_end_matches(pat='/') | safe }}/css/main.css" rel="stylesheet">

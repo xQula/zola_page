@@ -26,7 +26,7 @@ slogan = "Puk Puk"
 navbar_title = "Project Portfolio"
 
 [languages.ru]
-title = "Projekt-Portfolio"
+title = "Портфолио проектов"
 taxonomies = [
     { name = "projects", paginate_by = 5, feed = true },
     { name = "skills", paginate_by = 5, feed = true },
@@ -51,7 +51,7 @@ navbar_title = "Портфолио проектов"
 enable_multilingual = true
 
 [extra.navbar]
-zz = "Project Portfolio"
+title = "Project Portfolio"
 
 items = [
     { lang = "en", links = [
@@ -64,7 +64,7 @@ items = [
 
 [extra.index]
 title = "Darya Evst"
-slogan = "Puk Puk"
+slogan = "xx"
 image = "title_photo.jpg"
 image_alt = "Placeholder text describing the index's image."
 
