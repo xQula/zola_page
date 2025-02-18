@@ -1395,9 +1395,15 @@ html {
         background-color: rgb(55 65 81/var(--tw-bg-opacity))
     }
 
+
     .dark\:bg-gray-800 {
         --tw-bg-opacity: 1;
         background-color: rgb(31 41 55/var(--tw-bg-opacity))
+    }
+
+    .dark\:bg-gray-850 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(18 32 36/var(--tw-bg-opacity))
     }
 
     .dark\:bg-gray-900 {
