@@ -47,22 +47,15 @@
         </div>
         <div class="flex-1 flex items-center">
           <div class="flex-shrink-0 flex items-center ml-2">
-            <a href="{{ config.base_url | safe }}{% if lang != config.default_language%}/{{ lang }}{% endif %}" class="text-xl text-gray-800 dark:text-white">{{trans(key="navbar_title", lang=lang)}}</a>
+            <a href="{{ config.base_url | safe }}{% if lang != config.default_language%}/{{ lang }}{% endif %}">
+              <img src="{{ config.extra.index.image_logo }}" alt="Logo" style="height: 55px; width: auto;">
+            </a>
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="nav-links flex space-x-4">
               {{ macros::navbar_button(url="projects", text=trans(key="projects", lang=lang)) }}
               {{ macros::navbar_button(url="skills", text=trans(key="skills", lang=lang)) }}
-              {% if config.extra.navbar.items %}
-              {% for item in config.extra.navbar.items %}
-              {% if lang == item.lang %}
-              {% for link in item.links %}
-              {{ macros::navbar_button(url=link.url, text=link.name) }}
-              {% endfor %}
-              {% endif %}
-              {% endfor %}
-              {% endif %}
-
+              {{ macros::navbar_button(url="blog", text=trans(key="blog", lang=lang)) }}
               {% if config.extra.sidebar.items %}
               <!-- More ... Button (sidebar) -->
               <button id="toggle-sidebar">

@@ -3,8 +3,6 @@ base_url = "https://awinterstein.github.io/zola-theme-project-portfolio-example"
 
 theme = "project-portfolio"
 
-title = "Project Portfolio"
-
 taxonomies = [
     { name = "projects", paginate_by = 5, feed = true },
     { name = "skills", paginate_by = 5, feed = true },
@@ -24,9 +22,9 @@ words = "words"
 minutes = "minutes"
 slogan = "Puk Puk"
 navbar_title = "Project Portfolio"
+blog = "Blog"
 
 [languages.ru]
-title = "Портфолио проектов"
 taxonomies = [
     { name = "projects", paginate_by = 5, feed = true },
     { name = "skills", paginate_by = 5, feed = true },
@@ -46,26 +44,15 @@ words = "слова"
 minutes = "минуты"
 slogan = "Пук Пук"
 navbar_title = "Портфолио проектов"
+blog = "Блог"
 
 [extra]
 enable_multilingual = true
 
-[extra.navbar]
-title = "Project Portfolio"
-
-items = [
-    { lang = "en", links = [
-        { url = "blog", name = "Blog" },
-    ] },
-    { lang = "ru", links = [
-        { url = "blog", name = "Блог" },
-    ] },
-]
-
 [extra.index]
 title = "Darya Evst"
-slogan = "xx"
 image = "title_photo.jpg"
+image_logo = "logo.png"
 image_alt = "Placeholder text describing the index's image."
 
 [extra.social]
