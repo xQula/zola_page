@@ -10,9 +10,9 @@
   {% if config.extra.index.slogan %}
   <p class="mb-6">{{ trans(key="slogan", lang=lang) }}</p>
   {% endif %}
-  {% if config.extra.index.image %}
+  {% if config.extra.index.image_avatar %}
   <img class="rounded-full h-40 w-40"
-    src="{{ config.base_url | trim_end_matches(pat='/') | safe }}/{{ config.extra.index.image }}" {% if
+    src="{{ config.base_url | trim_end_matches(pat='/') | safe }}/{{ config.extra.index.image_avatar }}" {% if
     config.extra.index.image_alt %}alt="{{ config.extra.index.image_alt }}" {% endif %}>
   {% endif %}
   <div class="flex flex-wrap space-x-4 mt-7">
