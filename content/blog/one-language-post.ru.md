@@ -6,3 +6,5 @@ date = "2025-02-05"
 [taxonomies]
 blog-tags = ["Test"]
 +++
+
+This blog post exists only in English.
