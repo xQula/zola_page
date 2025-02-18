@@ -51,7 +51,7 @@ enable_multilingual = true
 
 [extra.index]
 title = "Darya Evst"
-image = "title_photo.jpg"
+image_avatar = "title_photo.jpg"
 image_logo = "logo.png"
 image_alt = "Placeholder text describing the index's image."
 
